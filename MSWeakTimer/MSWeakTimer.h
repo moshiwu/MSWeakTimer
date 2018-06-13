@@ -75,4 +75,8 @@ FOUNDATION_EXPORT const unsigned char MSWeakTimerVersionString[];
 
 - (id)userInfo;
 
+- (void)pauseTimer;
+
+- (void)resumeTimer;
+
 @end

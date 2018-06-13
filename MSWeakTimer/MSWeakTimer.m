@@ -214,4 +214,20 @@
     }
 }
 
+- (void)pauseTimer
+{
+    if (self.timer != nil)
+    {
+        dispatch_suspend(self.timer);
+    }
+}
+
+- (void)resumeTimer
+{
+    if (self.timer != nil)
+    {
+        dispatch_resume(self.timer);
+    }
+}
+
 @end
